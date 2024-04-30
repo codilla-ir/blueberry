@@ -18,9 +18,7 @@ module.exports = {
         "4xl": "2rem"
       },
       fontFamily: {
-        "vazir": "",
-        "vazir": "",
-        "vazir": "",
+        "vazir": "vazir",
       },
     },
   },

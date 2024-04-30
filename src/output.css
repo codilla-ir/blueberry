@@ -449,7 +449,7 @@ video {
 @font-face {
   font-family: "vazir";
 
-  src: local("vazir"), url('vazir') format("ttf");
+  src: local("vazir"), url('../public/fonts/Vazirmatn-Regular.woff2') format("woff2");
 
   font-display: swap;
 }
@@ -735,18 +735,18 @@ video {
   padding-right: 2.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .font-vazir {
-  font-family: ;
+  font-family: vazir;
 }
 
 .text-base {
@@ -827,10 +827,6 @@ body {
 
 .child\:block > * {
   display: block;
-}
-
-.child\:inline-block > * {
-  display: inline-block;
 }
 
 .child\:transition-colors > * {

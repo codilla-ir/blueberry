@@ -5,7 +5,7 @@
 @layer base {
     @font-face {
         font-family: "vazir";
-        src: local("vazir"), url('vazir') format("ttf");
+        src: local("vazir"), url('../public/fonts/Vazirmatn-Regular.woff2') format("woff2");
         font-display: swap;
     }
 }
