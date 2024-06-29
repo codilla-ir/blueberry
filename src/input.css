@@ -9,8 +9,3 @@
         font-display: swap;
     }
 }
-
-body {
-    background-image: url('../public/img/headerBgDesktop.png');
-    background-repeat: no-repeat;
-}
