@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<body class="font-vazir bg-[#f4f4f4]">
+
+
+    <div>
+        <div>
+            <!--
+        Mobile filter dialog
+      -->
+            <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
+                <!--
+          Off-canvas menu backdrop, show/hide based on off-canvas menu state.
+  
+          Entering: "transition-opacity ease-linear duration-300"
+            From: "opacity-0"
+            To: "opacity-100"
+          Leaving: "transition-opacity ease-linear duration-300"
+            From: "opacity-100"
+            To: "opacity-0"
+        -->
+                <div class="fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>
+
+                <div class="fixed inset-0 z-40 flex">
+                    <!--
+            Off-canvas menu, show/hide based on off-canvas menu state.
+  
+            Entering: "transition ease-in-out duration-300 transform"
+              From: "translate-x-full"
+              To: "translate-x-0"
+            Leaving: "transition ease-in-out duration-300 transform"
+              From: "translate-x-0"
+              To: "translate-x-full"
+          -->
+                    <div
+                        class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+                        <div class="flex items-center justify-between px-4">
+                            <h2 class="text-lg font-medium text-gray-900">Filters</h2>
+                            <button type="button"
+                                class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Filters -->
+                        <form class="mt-4 border-t border-gray-200">
+                            <h3 class="sr-only">Categories</h3>
+                            <ul role="list" class="px-2 py-3 font-medium text-gray-900">
+                                <li>
+                                    <a href="#" class="block px-2 py-3">Totes</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-2 py-3">Backpacks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-2 py-3">Travel Bags</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-2 py-3">Hip Bags</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-2 py-3">Laptop Sleeves</a>
+                                </li>
+                            </ul>
+
+                            <div class="border-t border-gray-200 px-4 py-6">
+                                <h3 class="-mx-2 -my-3 flow-root">
+                                    <!-- Expand/collapse section button -->
+                                    <button type="button"
+                                        class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500"
+                                        aria-controls="filter-section-mobile-0" aria-expanded="false">
+                                        <span class="font-medium text-gray-900">Color</span>
+                                        <span class="mr-6 flex items-center">
+                                            <!-- Expand icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                                            </svg>
+                                            <!-- Collapse icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <!-- Filter section, show/hide based on section state. -->
+                                <div class="pt-6" id="filter-section-mobile-0">
+                                    <div class="space-y-6">
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-color-0" name="color[]" value="white"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-color-0"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">White</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-color-1" name="color[]" value="beige"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-color-1"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Beige</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-color-2" name="color[]" value="blue"
+                                                type="checkbox" checked
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-color-2"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Blue</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-color-3" name="color[]" value="brown"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-color-3"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Brown</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-color-4" name="color[]" value="green"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-color-4"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Green</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-color-5" name="color[]" value="purple"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-color-5"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Purple</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 px-4 py-6">
+                                <h3 class="-mx-2 -my-3 flow-root">
+                                    <!-- Expand/collapse section button -->
+                                    <button type="button"
+                                        class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500"
+                                        aria-controls="filter-section-mobile-1" aria-expanded="false">
+                                        <span class="font-medium text-gray-900">Category</span>
+                                        <span class="mr-6 flex items-center">
+                                            <!-- Expand icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                                            </svg>
+                                            <!-- Collapse icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <!-- Filter section, show/hide based on section state. -->
+                                <div class="pt-6" id="filter-section-mobile-1">
+                                    <div class="space-y-6">
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-category-0" name="category[]" value="new-arrivals"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-category-0"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">New Arrivals</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-category-1" name="category[]" value="sale"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-category-1"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Sale</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-category-2" name="category[]" value="travel"
+                                                type="checkbox" checked
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-category-2"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Travel</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-category-3" name="category[]" value="organization"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-category-3"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Organization</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-category-4" name="category[]" value="accessories"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-category-4"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">Accessories</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 px-4 py-6">
+                                <h3 class="-mx-2 -my-3 flow-root">
+                                    <!-- Expand/collapse section button -->
+                                    <button type="button"
+                                        class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500"
+                                        aria-controls="filter-section-mobile-2" aria-expanded="false">
+                                        <span class="font-medium text-gray-900">Size</span>
+                                        <span class="mr-6 flex items-center">
+                                            <!-- Expand icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                                            </svg>
+                                            <!-- Collapse icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <!-- Filter section, show/hide based on section state. -->
+                                <div class="pt-6" id="filter-section-mobile-2">
+                                    <div class="space-y-6">
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-size-0" name="size[]" value="2l" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-size-0"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">2L</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-size-1" name="size[]" value="6l" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-size-1"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">6L</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-size-2" name="size[]" value="12l" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-size-2"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">12L</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-size-3" name="size[]" value="18l" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-size-3"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">18L</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-size-4" name="size[]" value="20l" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-size-4"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">20L</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-mobile-size-5" name="size[]" value="40l" type="checkbox"
+                                                checked
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-mobile-size-5"
+                                                class="mr-3 min-w-0 flex-1 text-gray-500">40L</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <section aria-labelledby="products-heading" class="pb-24 pt-6">
+                    <h2 id="products-heading" class="sr-only">Products</h2>
+
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+                        <!-- Filters -->
+                        <form class="hidden lg:block bg-white rounded-lg p-8">
+                            <h3 class="text-blue-500 text-md font-bold">دسته بندی</h3>
+                            <ul role="list"
+                                class="mt-4 space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-600">
+                                <li>
+                                    <a href="#">تلفن همراه</a>
+                                </li>
+                                <li>
+                                    <a href="#">ساعت هوشمند</a>
+                                </li>
+                                <li>
+                                    <a href="#">لپ تاپ </a>
+                                </li>
+                            </ul>
+
+                            <div class="border-b border-gray-200 py-6">
+                                <h3 class="-my-3 flow-root">
+                                    <!-- Expand/collapse section button -->
+                                    <button type="button"
+                                        class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
+                                        aria-controls="filter-section-0" aria-expanded="false">
+                                        <span class="font-medium text-gray-900">رنگ محصول</span>
+                                        <span class="mr-6 flex items-center">
+                                            <!-- Expand icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                                            </svg>
+                                            <!-- Collapse icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <!-- Filter section, show/hide based on section state. -->
+                                <div class="pt-6" id="filter-section-0">
+                                    <div class="space-y-4">
+                                        <div class="flex items-center">
+                                            <input id="filter-color-0" name="color[]" value="white" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-color-0" class="mr-3 text-sm text-gray-600">سفید</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-color-1" name="color[]" value="beige" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-color-1"
+                                                class="mr-3 text-sm text-gray-600">خاکستری</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-color-2" name="color[]" value="blue" type="checkbox"
+                                                checked
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-color-2" class="mr-3 text-sm text-gray-600">آبی</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-color-3" name="color[]" value="brown" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-color-3" class="mr-3 text-sm text-gray-600">زرد</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200 py-6">
+                                <h3 class="-my-3 flow-root">
+                                    <!-- Expand/collapse section button -->
+                                    <button type="button"
+                                        class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
+                                        aria-controls="filter-section-1" aria-expanded="false">
+                                        <span class="font-medium text-gray-900">برند</span>
+                                        <span class="mr-6 flex items-center">
+                                            <!-- Expand icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                                            </svg>
+                                            <!-- Collapse icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <!-- Filter section, show/hide based on section state. -->
+                                <div class="pt-6" id="filter-section-1">
+                                    <div class="space-y-4">
+                                        <div class="flex items-center">
+                                            <input id="filter-category-0" name="category[]" value="new-arrivals"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-category-0" class="mr-3 text-sm text-gray-600">اپل
+                                            </label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-category-1" name="category[]" value="sale" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-category-1"
+                                                class="mr-3 text-sm text-gray-600">سامسونگ</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-category-2" name="category[]" value="travel"
+                                                type="checkbox" checked
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-category-2"
+                                                class="mr-3 text-sm text-gray-600">شیائومی</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input id="filter-category-3" name="category[]" value="organization"
+                                                type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <label for="filter-category-3"
+                                                class="mr-3 text-sm text-gray-600">هواوی</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" py-6">
+                                <h3 class="-my-3 flow-root">
+                                    <!-- Expand/collapse section button -->
+                                    <button type="button"
+                                        class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500"
+                                        aria-controls="filter-section-2" aria-expanded="false">
+                                        <span class="font-medium text-gray-900">محدوده قیمت</span>
+                                        <span class="mr-6 flex items-center">
+                                            <!-- Expand icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                                            </svg>
+                                            <!-- Collapse icon, show/hide based on section open state. -->
+                                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+
+                            </div>
+                        </form>
+
+                        <!-- Product grid -->
+                        <div class="lg:col-span-3">
+                            <div class="flex justify-start items-center gap-4 px-4  w-full h-16 bg-white rounded-lg">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="42" height="42" rx="4" fill="#E4F0FF" />
+                                    <path d="M17.7705 15H35.8958" stroke="#76B5FF" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path opacity="0.34" d="M20.7915 20H32.8751" stroke="#76B5FF" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M24.8193 25H28.8472" stroke="#76B5FF" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M8.7072 30.3958C8.5956 30.3958 8.48399 30.355 8.39588 30.2675L4.8304 26.7267C4.66005 26.5575 4.66005 26.2775 4.8304 26.1083C5.00074 25.9392 5.28269 25.9392 5.45303 26.1083L8.7072 29.34L11.9614 26.1083C12.1317 25.9392 12.4137 25.9392 12.584 26.1083C12.7544 26.2775 12.7544 26.5575 12.584 26.7267L9.01852 30.2675C8.93041 30.355 8.81881 30.3958 8.7072 30.3958Z"
+                                        fill="#76B5FF" />
+                                    <path
+                                        d="M8.77057 29.604C8.49533 29.604 8.26709 29.2701 8.26709 28.8675V12.3405C8.26709 11.9379 8.49533 11.604 8.77057 11.604C9.04581 11.604 9.27405 11.9379 9.27405 12.3405V28.8675C9.27405 29.2701 9.04581 29.604 8.77057 29.604Z"
+                                        fill="#76B5FF" />
+                                </svg>
+
+                                <a href="#" class="text-blue-950">محبوب ترین</a>
+                                <a href="#" class="text-gray-400">پربازدیدترین</a>
+                                <a href="#" class="text-gray-400">گران‌ترین</a>
+                                <a href="#" class="text-gray-400">ارزان‌ترین</a>
+                            </div>
+
+                            <div class="mt-8 grid md:grid-cols-3 gap-8 place-items-center">
+                                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center shadow-md">
+                                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                                    <div class="w-full flex justify-between p-4">
+                                        <span class="text-gray-500">تلفن همراه</span>
+                                        <div class="flex">
+                                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                        </div>
+                                    </div>
+                                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                        گیگابایت</span>
+                                    <div class="w-full flex justify-between p-4">
+                                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪
+                                        </div>
+
+                                        <div class="flex flex-col items-end">
+                                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                            <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center shadow-md">
+                                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                                    <div class="w-full flex justify-between p-4">
+                                        <span class="text-gray-500">تلفن همراه</span>
+                                        <div class="flex">
+                                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                        </div>
+                                    </div>
+                                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                        گیگابایت</span>
+                                    <div class="w-full flex justify-between p-4">
+                                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪
+                                        </div>
+
+                                        <div class="flex flex-col items-end">
+                                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                            <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center shadow-md">
+                                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                                    <div class="w-full flex justify-between p-4">
+                                        <span class="text-gray-500">تلفن همراه</span>
+                                        <div class="flex">
+                                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                        </div>
+                                    </div>
+                                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                        گیگابایت</span>
+                                    <div class="w-full flex justify-between p-4">
+                                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪
+                                        </div>
+
+                                        <div class="flex flex-col items-end">
+                                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                            <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center shadow-md">
+                                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                                    <div class="w-full flex justify-between p-4">
+                                        <span class="text-gray-500">تلفن همراه</span>
+                                        <div class="flex">
+                                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                        </div>
+                                    </div>
+                                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                        گیگابایت</span>
+                                    <div class="w-full flex justify-between p-4">
+                                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪
+                                        </div>
+
+                                        <div class="flex flex-col items-end">
+                                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                            <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center shadow-md">
+                                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                                    <div class="w-full flex justify-between p-4">
+                                        <span class="text-gray-500">تلفن همراه</span>
+                                        <div class="flex">
+                                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                        </div>
+                                    </div>
+                                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                        گیگابایت</span>
+                                    <div class="w-full flex justify-between p-4">
+                                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪
+                                        </div>
+
+                                        <div class="flex flex-col items-end">
+                                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                            <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <nav class="flex justify-center items-center mt-8 gap-1">
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.56863 2.00691C6.50235 1.3372 5.48594 0.780245 4.71349 0.469C4.37526 0.3248 3.52012 0.0196 3.06322 0C2.62543 0 2.20809 0.1008 1.80984 0.3052C1.3134 0.5908 0.915149 1.0402 0.696932 1.5708C0.556455 1.939 0.338238 3.0408 0.338238 3.0604C0.12002 4.2658 0 6.2244 0 8.3888C0 10.451 0.12002 12.3298 0.298685 13.5534C0.303834 13.5583 0.321509 13.6488 0.348883 13.7888C0.430279 14.2052 0.597429 15.0602 0.776035 15.4112C1.21383 16.268 2.06897 16.8 2.98412 16.8H3.06322C3.65923 16.779 4.91262 16.247 4.91262 16.2274C5.62213 15.9248 6.56406 15.407 7.56523 14.7825C7.63001 15.0339 7.70204 15.2658 7.77604 15.4112C8.21383 16.268 9.06897 16.8 9.98412 16.8H10.0632C10.6592 16.779 11.9126 16.247 11.9126 16.2274C14.0198 15.3286 18.1768 12.5328 19.8475 10.675C19.8475 10.675 20.3181 10.1976 20.5226 9.8994C20.8418 9.471 21 8.9404 21 8.4098C21 7.8176 20.8213 7.266 20.4831 6.8166C20.4556 6.78836 20.4015 6.72795 20.331 6.64915C20.1987 6.50136 20.0086 6.28888 19.8271 6.1026C18.1959 4.3064 13.9407 1.3664 11.7135 0.469C11.3753 0.3248 10.5201 0.0196 10.0632 0C9.62543 0 9.20809 0.1008 8.80984 0.3052C8.3134 0.5908 7.91515 1.0402 7.69693 1.5708C7.65803 1.67277 7.61317 1.83099 7.56863 2.00691Z"
+                                        fill="#222F5D" fill-opacity="0.46" />
+                                </svg>
+                                <svg width="14" height="17" viewBox="0 0 14 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.4831 6.8166C13.404 6.7354 13.1053 6.3882 12.8271 6.1026C11.1959 4.3064 6.94067 1.3664 4.71349 0.469C4.37526 0.3248 3.52012 0.0196 3.06322 0C2.62543 0 2.20809 0.1008 1.80984 0.3052C1.3134 0.5908 0.91515 1.0402 0.696932 1.5708C0.556455 1.939 0.338238 3.0408 0.338238 3.0604C0.12002 4.2658 0 6.2244 0 8.3888C0 10.451 0.12002 12.3298 0.298685 13.5534C0.319143 13.573 0.53736 14.9422 0.776035 15.4112C1.21383 16.268 2.06897 16.8 2.98412 16.8H3.06322C3.65923 16.779 4.91262 16.247 4.91262 16.2274C7.01978 15.3286 11.1768 12.5328 12.8475 10.675C12.8475 10.675 13.3181 10.1976 13.5226 9.8994C13.8418 9.471 14 8.9404 14 8.4098C14 7.8176 13.8213 7.266 13.4831 6.8166Z"
+                                        fill="#222F5D" fill-opacity="0.46" />
+                                </svg>
+                                <a class=" w-6 h-10 inline-flex justify-center items-center p-4 rounded bg-blue-300 text-blue-700 hover:bg-gray-300"
+                                    href="#">۱</a>
+                                <a class=" w-6 h-10 inline-flex justify-center items-center p-4 rounded  hover:bg-gray-300"
+                                    href="#">۲</a>
+                                <a class=" w-6 h-10 inline-flex justify-center items-center p-4 rounded hover:bg-gray-300"
+                                    href="#">۳</a>
+                                <a class=" w-6 h-10 inline-flex justify-center items-center p-4 rounded hover:bg-gray-300"
+                                    href="#">۴</a>
+                                <svg width="14" height="17" viewBox="0 0 14 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.516902 6.8166C0.596006 6.7354 0.894691 6.3882 1.17292 6.1026C2.80409 4.3064 7.05933 1.3664 9.28651 0.469C9.62474 0.3248 10.4799 0.0196 10.9368 0C11.3746 0 11.7919 0.1008 12.1902 0.3052C12.6866 0.5908 13.0849 1.0402 13.3031 1.5708C13.4435 1.939 13.6618 3.0408 13.6618 3.0604C13.88 4.2658 14 6.2244 14 8.3888C14 10.451 13.88 12.3298 13.7013 13.5534C13.6809 13.573 13.4626 14.9422 13.224 15.4112C12.7862 16.268 11.931 16.8 11.0159 16.8H10.9368C10.3408 16.779 9.08738 16.247 9.08738 16.2274C6.98022 15.3286 2.82319 12.5328 1.15246 10.675C1.15246 10.675 0.681929 10.1976 0.47735 9.8994C0.158208 9.471 0 8.9404 0 8.4098C0 7.8176 0.178665 7.266 0.516902 6.8166Z"
+                                        fill="#002149" />
+                                </svg>
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.4314 2.00691C14.4976 1.3372 15.5141 0.780245 16.2865 0.469C16.6247 0.3248 17.4799 0.0196 17.9368 0C18.3746 0 18.7919 0.1008 19.1902 0.3052C19.6866 0.5908 20.0849 1.0402 20.3031 1.5708C20.4435 1.939 20.6618 3.0408 20.6618 3.0604C20.88 4.2658 21 6.2244 21 8.3888C21 10.451 20.88 12.3298 20.7013 13.5534C20.6962 13.5583 20.6785 13.6488 20.6511 13.7888C20.5697 14.2052 20.4026 15.0602 20.224 15.4112C19.7862 16.268 18.931 16.8 18.0159 16.8H17.9368C17.3408 16.779 16.0874 16.247 16.0874 16.2274C15.3779 15.9248 14.4359 15.407 13.4348 14.7825C13.37 15.0339 13.298 15.2658 13.224 15.4112C12.7862 16.268 11.931 16.8 11.0159 16.8H10.9368C10.3408 16.779 9.08738 16.247 9.08738 16.2274C6.98022 15.3286 2.82318 12.5328 1.15246 10.675C1.15246 10.675 0.681929 10.1976 0.47735 9.8994C0.158207 9.471 0 8.9404 0 8.4098C0 7.8176 0.178665 7.266 0.516903 6.8166C0.544413 6.78836 0.59848 6.72795 0.669006 6.64915C0.801279 6.50136 0.991449 6.28888 1.17292 6.1026C2.80409 4.3064 7.05933 1.3664 9.28651 0.469C9.62474 0.3248 10.4799 0.0196 10.9368 0C11.3746 0 11.7919 0.1008 12.1902 0.3052C12.6866 0.5908 13.0849 1.0402 13.3031 1.5708C13.342 1.67277 13.3868 1.83099 13.4314 2.00691Z"
+                                        fill="#002149" />
+                                </svg>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
