@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/swiper.css" />
 
 </head>
 
 <body class="font-vazir bg-[#f4f4f4]">
 
     <header
-        class="container fixed top-0 right-0 left-0 hidden md:flex items-center h-28 px-5 lg:px-10 py-5 mx-auto bg-white shadow-lg">
+        class="container z-50 fixed top-0 right-0 left-0 hidden md:flex items-center h-28 px-5 lg:px-10 py-5 mx-auto bg-white shadow-lg">
 
         <div class="flex flex-col w-full gap-4">
 
@@ -92,6 +93,7 @@
 
             </div>
         </div>
+
 
         <div class=" my-16 flex flex-wrap justify-center gap-16 space-y-4">
             <div class="flex items-center justify-center gap-4">
@@ -174,100 +176,114 @@
     <section>
         <div
             class="container overflow-hidden mx-auto mt-20 w-11/12 flex items-center  rounded-tl-4xl rounded-tr-[100px] rounded-b-4xl h-96 bg-blue-500">
-            <div class="flex flex-col items-center gap-8 mx-12">
+            <div class="flex flex-col items-center gap-8 mx-2 lg:mx-12">
                 <span class="text-white mx-8 font-bold text-3xl text-center">پیشنهاد شگفت انگیز</span>
                 <img class="w-12 h-12" src="../public/img/discount.svg" alt="">
                 <span class="text-white font-semibold">مشاهده همه</span>
             </div>
-            <div class="flex items-center justify-center gap-x-8">
-                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                    <div class="w-full flex justify-between p-4">
-                        <span class="text-gray-500">تلفن همراه</span>
-                        <div class="flex">
-                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+            <div class="w-full flex items-center justify-center gap-x-8">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
+                            <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500">تلفن همراه</span>
+                                <div class="flex">
+                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
 
+                                </div>
+                            </div>
+                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                گیگابایت</span>
+                            <div class="w-full flex justify-between p-4">
+                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
+
+                                <div class="flex flex-col items-end">
+                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
+                            <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500">تلفن همراه</span>
+                                <div class="flex">
+                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                </div>
+                            </div>
+                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                گیگابایت</span>
+                            <div class="w-full flex justify-between p-4">
+                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
+
+                                <div class="flex flex-col items-end">
+                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
+                            <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500">تلفن همراه</span>
+                                <div class="flex">
+                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                </div>
+                            </div>
+                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                گیگابایت</span>
+                            <div class="w-full flex justify-between p-4">
+                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
+
+                                <div class="flex flex-col items-end">
+                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
+                            <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500">تلفن همراه</span>
+                                <div class="flex">
+                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
+                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
+
+                                </div>
+                            </div>
+                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
+                                گیگابایت</span>
+                            <div class="w-full flex justify-between p-4">
+                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
+
+                                <div class="flex flex-col items-end">
+                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                    <div class="w-full flex justify-between p-4">
-                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
 
-                        <div class="flex flex-col items-end">
-                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                            <span class="text-blue-700 font-medium text-sm">تومان</span>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                    <div class="w-full flex justify-between p-4">
-                        <span class="text-gray-500">تلفن همراه</span>
-                        <div class="flex">
-                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
 
-                        </div>
-                    </div>
-                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                    <div class="w-full flex justify-between p-4">
-                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                        <div class="flex flex-col items-end">
-                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                            <span class="text-blue-700 font-medium text-sm">تومان</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                    <div class="w-full flex justify-between p-4">
-                        <span class="text-gray-500">تلفن همراه</span>
-                        <div class="flex">
-                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                        </div>
-                    </div>
-                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                    <div class="w-full flex justify-between p-4">
-                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                        <div class="flex flex-col items-end">
-                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                            <span class="text-blue-700 font-medium text-sm">تومان</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                    <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                    <div class="w-full flex justify-between p-4">
-                        <span class="text-gray-500">تلفن همراه</span>
-                        <div class="flex">
-                            <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                            <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                        </div>
-                    </div>
-                    <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                    <div class="w-full flex justify-between p-4">
-                        <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                        <div class="flex flex-col items-end">
-                            <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                            <span class="text-blue-700 font-medium text-sm">تومان</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -613,3 +629,36 @@
 </body>
 
 </html>
+
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<script src="../public/js/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        spaceBetween: 30,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+
+    });
+</script>
