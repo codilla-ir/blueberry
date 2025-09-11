@@ -10,71 +10,80 @@
 
 </head>
 
-<body class="font-vazir bg-[#f4f4f4]">
+<body class="font-vazir bg-white">
 
     <header
-        class="container z-50 fixed top-0 right-0 left-0 hidden md:flex items-center h-28 px-5 lg:px-10 py-5 mx-auto bg-white shadow-lg">
-
-        <div class="flex flex-col w-full gap-4">
-
+        class="container z-50 fixed top-0 right-0 left-0 hidden md:flex items-center px-6 lg:px-12 py-4 mx-auto bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="flex flex-col w-full gap-6">
+            <!-- Reduced header height and improved spacing -->
             <div class="w-full flex items-center justify-between">
-                <div class="flex items-center gap-12">
-                    <div>
-                        <span class="text-[#2388FF] text-2xl font-black">بلو</span>
-                        <span class="text-slate-800 text-2xl font-black">بری</span>
+                <div class="flex items-center gap-16">
+                    <!-- Updated logo with modern styling -->
+                    <div class="flex items-center">
+                        <span class="text-[#2388FF] text-3xl font-bold tracking-tight">بلو</span>
+                        <span class="text-gray-900 text-3xl font-bold tracking-tight">بری</span>
                     </div>
 
-                    <div class="w-96 h-12 flex items-center justify-center relative rounded-md bg-gray-200 text-center">
-                        <svg class="size-6 absolute right-2 top-3" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <!-- Modern search bar with clean design -->
+                    <div
+                        class="w-96 h-11 flex items-center relative rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors focus-within:border-[#2388FF] focus-within:ring-2 focus-within:ring-[#2388FF]/10">
+                        <svg class="size-5 absolute right-4 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
-
-                        <span>جستجوی نام محصول، نام برند، نام مدل و...</span>
+                        <input type="text" placeholder="جستجوی نام محصول، نام برند، نام مدل و..."
+                            class="w-full h-full bg-transparent border-0 outline-none text-sm text-gray-700 placeholder-gray-500 pr-12 pl-4 rounded-xl">
                     </div>
                 </div>
 
+                <!-- Modern action buttons with improved styling -->
+                <div class="flex items-center gap-6">
+                    <button
+                        class="px-6 py-2.5 border border-[#2388FF] rounded-lg text-[#2388FF] font-medium hover:bg-[#2388FF] hover:text-white transition-all duration-200 text-sm">
+                        ورود | ثبت نام
+                    </button>
 
-                <div class="flex items-center gap-8">
-                    <button class=" px-4 py-3 border-blue-400 rounded-md border text-blue-400">ورود | ثبت
-                        نام</button>
-                    <svg width="3" height="45" viewBox="0 0 3 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.38477 1.96729V43.0299" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
+                    <!-- Subtle divider -->
+                    <div class="w-px h-8 bg-gray-200"></div>
 
-
+                    <!-- Modern cart icon with hover effect -->
+                    <button class="p-2 rounded-lg hover:bg-gray-50 transition-colors group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6 text-gray-600 group-hover:text-[#2388FF] transition-colors">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </button>
                 </div>
             </div>
 
-
-            <div>
-                <ul class="flex gap-x-8 text-sm">
+            <!-- Modern navigation with better spacing and hover effects -->
+            <div class="border-t border-gray-100 pt-4">
+                <ul class="flex gap-x-12 text-sm">
                     <li>
-                        <a class="flex items-center gap-4" href="#">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-                            </span>دسته بندی ها</a>
+                        <a class="flex items-center gap-3 text-gray-700 hover:text-[#2388FF] transition-colors font-medium"
+                            href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                            دسته بندی ها
+                        </a>
                     </li>
                     <li>
-                        <a href="">پرفروش ترین ها</a>
+                        <a href="#" class="text-gray-700 hover:text-[#2388FF] transition-colors font-medium">پرفروش ترین
+                            ها</a>
                     </li>
                     <li>
-                        <a href="">درباره ما</a>
-
+                        <a href="#" class="text-gray-700 hover:text-[#2388FF] transition-colors font-medium">درباره
+                            ما</a>
                     </li>
                     <li>
-                        <a href="">تخفیف ها</a>
-
+                        <a href="#" class="text-gray-700 hover:text-[#2388FF] transition-colors font-medium">تخفیف
+                            ها</a>
                     </li>
                 </ul>
             </div>
@@ -82,324 +91,446 @@
     </header>
 
 
+
     <main>
-        <div class="container flex flex-col lg:flex-row mt-40 mx-auto items-center justify-center gap-6">
-            <div>
-                <img class="    " src="../public/img/hero.jpg" alt="">
+        <!-- Enhanced hero gallery with modern image styling and better responsive layout -->
+        <div class="container mx-auto w-full flex flex-col lg:flex-row mt-40 items-center justify-center gap-8 px-8">
+            <div class="relative group">
+                <img class="rounded-2xl shadow-lg" src="../public/img/slider1.png" alt="">
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent opacity-0">
+                </div>
             </div>
-            <div>
-                <img class="mb-2" src="../public/img/hero2.jpg" alt="">
-                <img src="../public/img/hero3.jpg" alt="">
 
-            </div>
         </div>
 
+        <!-- Modernized features section with gradient backgrounds, better cards, and hover effects -->
 
-        <div class=" my-16 flex flex-wrap justify-center gap-16 space-y-4">
-            <div class="flex items-center justify-center gap-4">
-                <div class="rounded-full w-20 h-20 bg-blue-700 flex justify-center items-center">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M32.8125 39.0625C32.8125 39.8913 33.1417 40.6862 33.7278 41.2722C34.3138 41.8583 35.1087 42.1875 35.9375 42.1875C36.7663 42.1875 37.5611 41.8583 38.1472 41.2722C38.7332 40.6862 39.0625 39.8913 39.0625 39.0625M32.8125 39.0625C32.8125 38.2337 33.1417 37.4389 33.7278 36.8528C34.3138 36.2668 35.1087 35.9375 35.9375 35.9375C36.7663 35.9375 37.5611 36.2668 38.1472 36.8528C38.7332 37.4389 39.0625 38.2337 39.0625 39.0625M32.8125 39.0625H20.3125M39.0625 39.0625H42.9687C43.5903 39.0625 44.1865 38.8156 44.626 38.3761C45.0655 37.9365 45.3125 37.3404 45.3125 36.7188V29.6875M20.3125 39.0625H15.625M20.3125 39.0625V29.6875M45.3125 29.6875V13.7813C45.3158 13.2108 45.1073 12.6594 44.7275 12.2337C44.3476 11.8081 43.8234 11.5385 43.2562 11.4771C36.3124 10.7563 29.3126 10.7563 22.3687 11.4771C21.1916 11.5979 20.3125 12.5979 20.3125 13.7813V15.7771M45.3125 29.6875H20.3125M9.37496 39.0625C9.37496 39.8913 9.7042 40.6862 10.2903 41.2722C10.8763 41.8583 11.6712 42.1875 12.5 42.1875C13.3288 42.1875 14.1236 41.8583 14.7097 41.2722C15.2957 40.6862 15.625 39.8913 15.625 39.0625M9.37496 39.0625C9.37496 38.2337 9.7042 37.4389 10.2903 36.8528C10.8763 36.2668 11.6712 35.9375 12.5 35.9375C13.3288 35.9375 14.1236 36.2668 14.7097 36.8528C15.2957 37.4389 15.625 38.2337 15.625 39.0625M9.37496 39.0625H7.03121C5.73746 39.0625 4.67913 38.0125 4.76038 36.7209C5.17901 29.8409 7.496 23.2116 11.4541 17.5688C11.8311 17.0402 12.3234 16.6042 12.8936 16.2938C13.4639 15.9834 14.0972 15.8067 14.7458 15.7771H20.3125M20.3125 15.7771V29.6875"
-                            stroke="#F9F9F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold">ارسال رایگان</span>
-                    <span class="text-gray-500 text-sm">به سراسر کشور</span>
-                </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-4">
-                <div class="rounded-full w-20 h-20 bg-blue-700 flex justify-center items-center">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26.7048 15.58H35.0248L29.7231 10.275C28.0163 8.56814 25.8902 7.34068 23.5585 6.71603C21.2268 6.09138 18.7718 6.09157 16.4403 6.71656C14.1087 7.34155 11.9827 8.56933 10.2761 10.2765C8.56954 11.9836 7.34242 14.1099 6.71814 16.4417M4.97481 32.74V24.42M4.97481 24.42H13.2948M4.97481 24.42L10.2748 29.725C11.9817 31.4319 14.1078 32.6594 16.4395 33.284C18.7711 33.9087 21.2261 33.9085 23.5577 33.2835C25.8893 32.6585 28.0152 31.4307 29.7218 29.7236C31.4284 28.0164 32.6555 25.8901 33.2798 23.5584M35.0248 7.26002V15.5767"
-                            stroke="#F9F9F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold">بازگشت تا ۷ روز</span>
-                    <span class="text-gray-500 text-sm">بدون کارمزد</span>
-                </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-4">
-                <div class="rounded-full w-20 h-20 bg-blue-700 flex justify-center items-center">
-                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor">
-                        <path stroke="#F9F9F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-
-                    </svg>
-
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold">گارانتی ۲ ساله</span>
-                    <span class="text-gray-500 text-sm">بی قید و شرط</span>
-                </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-4">
-                <div class="rounded-full w-20 h-20 bg-blue-700 flex justify-center items-center">
-                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor">
-                        <path stroke="#F9F9F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-                    </svg>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold">اصالت کالا</span>
-                    <span class="text-gray-500 text-sm">تضمین اصالت کالا</span>
-                </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-4">
-                <div class="rounded-full w-20 h-20 bg-blue-700 flex justify-center items-center">
-                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor">
-                        <path stroke="#F9F9F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                    </svg>
-
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold">تضمین قیمت</span>
-                    <span class="text-gray-500 text-sm">کمترین قیمت بازار</span>
-                </div>
-            </div>
-        </div>
     </main>
+
 
 
     <!-- slider -->
     <section>
-        <div
-            class="container overflow-hidden mx-auto mt-20 w-11/12 flex items-center  rounded-tl-4xl rounded-tr-[100px] rounded-b-4xl h-96 bg-blue-500">
+        <div class="container mx-auto overflow-hidden mt-20 flex items-center rounded-4xl bg-blue-500 h-96 shadow-2xl">
             <div class="flex flex-col items-center gap-8 mx-2 lg:mx-12">
-                <span class="text-white mx-8 font-bold text-3xl text-center">پیشنهاد شگفت انگیز</span>
-                <img class="w-12 h-12" src="../public/img/discount.svg" alt="">
-                <span class="text-white font-semibold">مشاهده همه</span>
+                <span class="text-white mx-8 font-bold text-3xl text-center drop-shadow-lg">پیشنهاد شگفت انگیز</span>
+                <div class=" p-4">
+                    <img class="w-12 h-12 filter brightness-0 invert" src="../public/img/discount.svg" alt="">
+                </div>
+                <button
+                    class="text-white font-semibold bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full hover:bg-white/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    مشاهده همه
+                </button>
             </div>
             <div class="w-full flex items-center justify-center gap-x-8">
-                <!-- Slider main container -->
                 <div class="swiper">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
-                            <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
+                        <div
+                            class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg border border-gray-100">
+                            <div class="overflow-hidden rounded-t-2xl">
+                                <img class="w-36 h-40 object-cover" src="../public/img/iphone.jpg" alt="">
+                            </div>
                             <div class="w-full flex justify-between p-4">
-                                <span class="text-gray-500">تلفن همراه</span>
-                                <div class="flex">
-                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
+                                <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                <div class="flex gap-1">
+                                    <div
+                                        class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                    </div>
+                                    <div
+                                        class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                    </div>
+                                    <div
+                                        class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                    </div>
+                                    <div
+                                        class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                    </div>
                                 </div>
                             </div>
-                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
-                                گیگابایت</span>
-                            <div class="w-full flex justify-between p-4">
-                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
+                            <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون ۱۳
+                                مدل ۱۲۸ گیگابایت</span>
+                            <div class="w-full flex justify-between p-4 mt-auto">
+                                <div
+                                    class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                    ۲۵٪</div>
                                 <div class="flex flex-col items-end">
-                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                    <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-600 font-medium text-sm">تومان</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
-                            <img class="w-36 h-40" src="../public/img/product7.jpg" alt="">
-                            <div class="w-full flex justify-between p-4">
-                                <span class="text-gray-500">تلفن همراه</span>
-                                <div class="flex">
-                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
 
+                        <div
+                            class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="overflow-hidden rounded-t-2xl">
+                                <img class="w-36 h-40 object-cover transition-transform duration-300 hover:scale-110"
+                                    src="../public/img/product7.jpg" alt="">
+                            </div>
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                <div class="flex gap-1">
+                                    <div
+                                        class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                    </div>
+                                    <div
+                                        class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                    </div>
+                                    <div
+                                        class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                    </div>
+                                    <div
+                                        class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                    </div>
                                 </div>
                             </div>
-                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
-                                گیگابایت</span>
-                            <div class="w-full flex justify-between p-4">
-                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
+                            <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون ۱۳
+                                مدل ۱۲۸ گیگابایت</span>
+                            <div class="w-full flex justify-between p-4 mt-auto">
+                                <div
+                                    class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                    ۲۵٪</div>
                                 <div class="flex flex-col items-end">
-                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                    <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-600 font-medium text-sm">تومان</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
-                            <img class="w-36 h-40" src="../public/img/product5.jpg" alt="">
-                            <div class="w-full flex justify-between p-4">
-                                <span class="text-gray-500">تلفن همراه</span>
-                                <div class="flex">
-                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
 
+                        <div
+                            class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="overflow-hidden rounded-t-2xl">
+                                <img class="w-36 h-40 object-cover transition-transform duration-300 hover:scale-110"
+                                    src="../public/img/product5.jpg" alt="">
+                            </div>
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                <div class="flex gap-1">
+                                    <div
+                                        class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                    </div>
+                                    <div
+                                        class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                    </div>
+                                    <div
+                                        class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                    </div>
+                                    <div
+                                        class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                    </div>
                                 </div>
                             </div>
-                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
-                                گیگابایت</span>
-                            <div class="w-full flex justify-between p-4">
-                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
+                            <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون ۱۳
+                                مدل ۱۲۸ گیگابایت</span>
+                            <div class="w-full flex justify-between p-4 mt-auto">
+                                <div
+                                    class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                    ۲۵٪</div>
                                 <div class="flex flex-col items-end">
-                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                    <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-600 font-medium text-sm">تومان</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-white min-w-64 h-80 rounded-xl flex flex-col items-center">
-                            <img class="w-36 h-40" src="../public/img/product6.jpg" alt="">
-                            <div class="w-full flex justify-between p-4">
-                                <span class="text-gray-500">تلفن همراه</span>
-                                <div class="flex">
-                                    <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                    <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
 
+                        <div
+                            class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                            <div class="overflow-hidden rounded-t-2xl">
+                                <img class="w-36 h-40 object-cover transition-transform duration-300 hover:scale-110"
+                                    src="../public/img/product6.jpg" alt="">
+                            </div>
+                            <div class="w-full flex justify-between p-4">
+                                <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                <div class="flex gap-1">
+                                    <div
+                                        class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                    </div>
+                                    <div
+                                        class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                    </div>
+                                    <div
+                                        class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                    </div>
+                                    <div
+                                        class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                    </div>
                                 </div>
                             </div>
-                            <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸
-                                گیگابایت</span>
-                            <div class="w-full flex justify-between p-4">
-                                <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
+                            <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون ۱۳
+                                مدل ۱۲۸ گیگابایت</span>
+                            <div class="w-full flex justify-between p-4 mt-auto">
+                                <div
+                                    class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                    ۲۵٪</div>
                                 <div class="flex flex-col items-end">
-                                    <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                    <span class="text-blue-700 font-medium text-sm">تومان</span>
+                                    <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                    <span class="text-blue-600 font-medium text-sm">تومان</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
-
     </section>
+
+
+
+
+    <!-- categories -->
+    <section>
+        <div>
+            <div class="pt-16 sm:pt-24 xl:mx-auto xl:max-w-7xl xl:px-8">
+                <div class="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
+                    <h2 class="text-2xl font-bold tracking-tight text-blue-500">دسته‌بندی <span
+                            class="text-blue-900">محصولات</span></h2>
+                    <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
+                        مشاهده همه
+                        <span aria-hidden="true"> &larr;</span>
+                    </a>
+                </div>
+
+                <div class="mt-4">
+                    <div class="my-12">
+                        <div class="relative box-content h-80 py-2">
+                            <div class="flex items-center justify-evenly space-x-8">
+                                <div class="flex flex-col items-center justify-center w-full">
+                                    <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
+                                        <span aria-hidden="true" class="absolute inset-0 ">
+                                            <img src="../public/img/mobile.png" alt=""
+                                                class="size-full object-cover object-center">
+                                        </span>
+                                    </a>
+                                    <span class="mt-4 text-center font-medium text-gray-900">موبایل</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center w-full">
+                                    <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
+                                        <span aria-hidden="true" class="absolute inset-0">
+                                            <img src="../public/img/laptop.png" alt=""
+                                                class="size-full object-cover object-center">
+                                        </span>
+                                    </a>
+                                    <span class="mt-4 text-center font-medium text-gray-900">لپتاپ</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center w-full">
+                                    <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
+                                        <span aria-hidden="true" class="absolute inset-0">
+                                            <img src="../public/img/gadgets.png" alt=""
+                                                class="size-full object-cover object-center">
+                                        </span>
+                                    </a>
+                                    <span class="mt-4 text-center font-medium text-gray-900">هدفون</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center w-full">
+                                    <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
+                                        <span aria-hidden="true" class="absolute inset-0">
+                                            <img src="../public/img/home.jpg" alt=""
+                                                class="size-full object-cover object-center">
+                                        </span>
+                                    </a>
+                                    <span class="mt-4 text-center font-medium text-gray-900">لوازم منزل</span>
+                                </div>
+                                <div class="flex flex-col items-center justify-center w-full">
+                                    <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
+                                        <span aria-hidden="true" class="absolute inset-0">
+                                            <img src="../public/img/home2.jpg" alt=""
+                                                class="size-full object-cover object-center">
+                                        </span>
+                                    </a>
+                                    <span class="mt-4 text-center font-medium text-gray-900">لوازم برقی</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 px-4 sm:hidden">
+                    <a href="#" class="block text-sm font-semibold text-blue-600 hover:text-blue-500">
+                        Browse all categories
+                        <span aria-hidden="true"> &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- banner -->
     <section>
-        <div class="container mx-auto  ">
-            <div class="mx-4 flex flex-col lg:flex-row space-y-4 items-center justify-center mt-24 gap-4">
-                <img class="shadow-2xl" src="../public/img/banner.jpg" alt="">
-                <img class="shadow-2xl" src="../public/img/banner.jpg" alt="">
+        <div class="container mx-auto">
+            <div class="mx-4 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
+                <div class="flex-1 w-full">
+                    <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/macbook.webp" alt="MacBook">
+                </div>
+                <div class="flex-1 w-full">
+                    <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/surface.webp" alt="Banner">
+                </div>
             </div>
-
-
         </div>
     </section>
 
 
+
     <!-- most viewed -->
-    <section>
-        <div class="container mx-auto">
-            <div class="mt-16 mx-16 border-b-2 border-gray-200">
-                <h3 class="text-xl leading-6 text-blue-500 font-bold border-b-4 border-blue-500 pb-5 inline-block">
-                    محصولات
-                    پربازدید
-                </h3>
+    <section class="mt-24">
+        <div class="container mt-12 mx-auto">
+            <div class="sm:flex sm:items-center sm:justify-between px-8">
+                <h2 class="text-2xl font-black tracking-tight text-blue-500">محصولات <span
+                        class="text-blue-900">پرفروش</span></h2>
+                <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
+                    مشاهده همه
+                    <span aria-hidden="true"> &larr;</span>
+                </a>
             </div>
             <!-- slider -->
-            <div
-                class="container overflow-hidden mx-auto mt-8 w-11/12 flex items-center  rounded-tl-[100px] rounded-tr-[100px] rounded-b-4xl h-96 bg-blue-500">
-                <div class="flex items-center justify-center gap-x-8 mx-8">
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
+            <div class="overflow-hidden mt-20 flex items-center mx-8 rounded-4xl bg-amber-500 h-96 shadow-2xl">
+                <div class="w-full flex items-center justify-center gap-x-8 px-8">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg border border-gray-100">
+                                <div class="overflow-hidden rounded-t-2xl">
+                                    <img class="w-36 h-40 object-cover" src="../public/img/iphone.jpg" alt="">
+                                </div>
+                                <div class="w-full flex justify-between p-4">
+                                    <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                    <div class="flex gap-1">
+                                        <div
+                                            class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                        </div>
+                                        <div
+                                            class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                        </div>
+                                        <div
+                                            class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                        </div>
+                                        <div
+                                            class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون
+                                    ۱۳
+                                    مدل ۱۲۸ گیگابایت</span>
+                                <div class="w-full flex justify-between p-4 mt-auto">
+                                    <div
+                                        class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                        ۲۵٪</div>
+                                    <div class="flex flex-col items-end">
+                                        <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                        <span class="text-blue-600 font-medium text-sm">تومان</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
 
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
+                            <div
+                                class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                                <div class="overflow-hidden rounded-t-2xl">
+                                    <img class="w-36 h-40 object-cover transition-transform duration-300 hover:scale-110"
+                                        src="../public/img/product7.jpg" alt="">
+                                </div>
+                                <div class="w-full flex justify-between p-4">
+                                    <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                    <div class="flex gap-1">
+                                        <div
+                                            class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                        </div>
+                                        <div
+                                            class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                        </div>
+                                        <div
+                                            class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                        </div>
+                                        <div
+                                            class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون
+                                    ۱۳
+                                    مدل ۱۲۸ گیگابایت</span>
+                                <div class="w-full flex justify-between p-4 mt-auto">
+                                    <div
+                                        class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                        ۲۵٪</div>
+                                    <div class="flex flex-col items-end">
+                                        <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                        <span class="text-blue-600 font-medium text-sm">تومان</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
 
+                            <div
+                                class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                                <div class="overflow-hidden rounded-t-2xl">
+                                    <img class="w-36 h-40 object-cover transition-transform duration-300 hover:scale-110"
+                                        src="../public/img/product5.jpg" alt="">
+                                </div>
+                                <div class="w-full flex justify-between p-4">
+                                    <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                    <div class="flex gap-1">
+                                        <div
+                                            class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                        </div>
+                                        <div
+                                            class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                        </div>
+                                        <div
+                                            class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                        </div>
+                                        <div
+                                            class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون
+                                    ۱۳
+                                    مدل ۱۲۸ گیگابایت</span>
+                                <div class="w-full flex justify-between p-4 mt-auto">
+                                    <div
+                                        class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                        ۲۵٪</div>
+                                    <div class="flex flex-col items-end">
+                                        <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                        <span class="text-blue-600 font-medium text-sm">تومان</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
 
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                            </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                            </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
+                            <div
+                                class="swiper-slide bg-white min-w-64 h-80 rounded-2xl flex flex-col items-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                                <div class="overflow-hidden rounded-t-2xl">
+                                    <img class="w-36 h-40 object-cover transition-transform duration-300 hover:scale-110"
+                                        src="../public/img/product6.jpg" alt="">
+                                </div>
+                                <div class="w-full flex justify-between p-4">
+                                    <span class="text-gray-500 text-sm font-medium">تلفن همراه</span>
+                                    <div class="flex gap-1">
+                                        <div
+                                            class="bg-blue-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-blue-200">
+                                        </div>
+                                        <div
+                                            class="bg-orange-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-orange-200">
+                                        </div>
+                                        <div
+                                            class="bg-gray-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-gray-200">
+                                        </div>
+                                        <div
+                                            class="bg-yellow-500 w-4 h-4 rounded-full shadow-md hover:scale-125 transition-transform duration-200 cursor-pointer border-2 border-white hover:border-yellow-200">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="font-semibold text-lg text-slate-800 self-start mr-4 leading-tight">آیفون
+                                    ۱۳
+                                    مدل ۱۲۸ گیگابایت</span>
+                                <div class="w-full flex justify-between p-4 mt-auto">
+                                    <div
+                                        class="bg-gradient-to-r from-red-500 to-pink-500 w-14 h-8 rounded-full text-white text-center py-1 text-sm font-bold shadow-lg">
+                                        ۲۵٪</div>
+                                    <div class="flex flex-col items-end">
+                                        <span class="text-blue-700 font-bold text-xl">۲۸,۲۵۰,۰۰۰</span>
+                                        <span class="text-blue-600 font-medium text-sm">تومان</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -411,7 +542,7 @@
 
 
     <!-- companies -->
-    <section>
+    <!-- <section>
         <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 my-16">
             <div class="w-56 h-56 rounded-lg bg-white flex items-center justify-center shadow-lg">
                 <img src="../public/img/Huawei.jpg" alt="">
@@ -429,127 +560,23 @@
                 <img src="../public/img/Samsung.jpg" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
 
-
-
-    <!-- most selled -->
-    <section>
-        <div class="container mx-auto">
-            <div class="mt-16 mx-16 border-b-2 border-gray-200">
-                <h3 class="text-xl leading-6 text-blue-500 font-bold border-b-4 border-blue-500 pb-5 inline-block">
-                    محصولات
-                    پرفروش
-                </h3>
-            </div>
-            <!-- slider -->
-            <div
-                class="container overflow-hidden mx-auto mt-8 w-11/12 flex items-center  rounded-tl-[100px] rounded-tr-[100px] rounded-b-4xl h-96 bg-blue-500">
-                <div class="flex items-center justify-center gap-x-8 mx-8">
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                            </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                            </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                            </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white w-64 h-80 rounded-xl flex flex-col items-center">
-                        <img class="w-36 h-40" src="../public/img/iphone.jpg" alt="">
-                        <div class="w-full flex justify-between p-4">
-                            <span class="text-gray-500">تلفن همراه</span>
-                            <div class="flex">
-                                <div class="bg-blue-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-orange-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-gray-500 w-3 h-3 rounded-full"></div>
-                                <div class="bg-yellow-500 w-3 h-3 rounded-full"></div>
-
-                            </div>
-                        </div>
-                        <span class="font-medium text-lg text-blue-950 self-start mr-4">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>
-                        <div class="w-full flex justify-between p-4">
-                            <div class="bg-blue-500 w-12 h-8 rounded-full text-white text-center py-1">۲۵٪</div>
-
-                            <div class="flex flex-col items-end">
-                                <span class="text-blue-700 font-medium text-xl">۲۸,۲۵۰,۰۰۰</span>
-                                <span class="text-blue-700 font-medium text-sm">تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
     <!-- blog -->
     <section>
         <div class="container mx-auto">
-            <div class="mt-16 mx-16 border-b-2 border-gray-200">
-                <h3 class="text-xl leading-6 text-blue-500 font-bold border-b-4 border-blue-500 pb-5 inline-block">
-                    جدیدترین مطالب
-                </h3>
+            <div class="sm:flex mt-24 sm:items-center sm:justify-between px-8">
+                <h2 class="text-2xl font-black tracking-tight text-blue-500">جدیدترین <span
+                        class="text-blue-900">مطالب</span></h2>
+                <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
+                    مشاهده همه
+                    <span aria-hidden="true"> &larr;</span>
+                </a>
             </div>
-            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 mx-4 md:mx-16 my-12">
+            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 mx-4 md:mx-12 my-12">
                 <div class="flex bg-white rounded-xl shadow">
                     <img class="object-contain" src="../public/img/blog1.jpg" alt="">
                     <div class="flex flex-col m-4">
@@ -589,39 +616,236 @@
     </section>
 
 
+    <div class="my-20 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                <div class="group flex items-center justify-center gap-4 p-6 rounded-2xl bg-white/50 backdrop-blur-sm">
+                    <div class="rounded-full w-16 h-16 bg-gray-50 flex justify-center items-center">
+                        <svg class="stroke-blue-500" width="32" height="32" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M32.8125 39.0625C32.8125 39.8913 33.1417 40.6862 33.7278 41.2722C34.3138 41.8583 35.1087 42.1875 35.9375 42.1875C36.7663 42.1875 37.5611 41.8583 38.1472 41.2722C38.7332 40.6862 39.0625 39.8913 39.0625 39.0625M32.8125 39.0625C32.8125 38.2337 33.1417 37.4389 33.7278 36.8528C34.3138 36.2668 35.1087 35.9375 35.9375 35.9375C36.7663 35.9375 37.5611 36.2668 38.1472 36.8528C38.7332 37.4389 39.0625 38.2337 39.0625 39.0625M32.8125 39.0625H20.3125M39.0625 39.0625H42.9687C43.5903 39.0625 44.1865 38.8156 44.626 38.3761C45.0655 37.9365 45.3125 37.3404 45.3125 36.7188V29.6875M20.3125 39.0625H15.625M20.3125 39.0625V29.6875M45.3125 29.6875V13.7813C45.3158 13.2108 45.1073 12.6594 44.7275 12.2337C44.3476 11.8081 43.8234 11.5385 43.2562 11.4771C36.3124 10.7563 29.3126 10.7563 22.3687 11.4771C21.1916 11.5979 20.3125 12.5979 20.3125 13.7813V15.7771M45.3125 29.6875H20.3125M9.37496 39.0625C9.37496 39.8913 9.7042 40.6862 10.2903 41.2722C10.8763 41.8583 11.6712 42.1875 12.5 42.1875C13.3288 42.1875 14.1236 41.8583 14.7097 41.2722C15.2957 40.6862 15.625 39.8913 15.625 39.0625M9.37496 39.0625C9.37496 38.2337 9.7042 37.4389 10.2903 36.8528C10.8763 36.2668 11.6712 35.9375 12.5 35.9375C13.3288 35.9375 14.1236 36.2668 14.7097 36.8528C15.2957 37.4389 15.625 38.2337 15.625 39.0625M9.37496 39.0625H7.03121C5.73746 39.0625 4.67913 38.0125 4.76038 36.7209C5.17901 29.8409 7.496 23.2116 11.4541 17.5688C11.8311 17.0402 12.3234 16.6042 12.8936 16.2938C13.4639 15.9834 14.0972 15.8067 14.7458 15.7771H20.3125M20.3125 15.7771V29.6875"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-gray-900 text-sm">ارسال رایگان</span>
+                        <span class="text-gray-600 text-xs mt-1">به سراسر کشور</span>
+                    </div>
+                </div>
+
+                <div class="group flex items-center justify-center gap-4 p-6">
+                    <div class="rounded-full bg-gray-50 w-16 h-16 flex justify-center items-center">
+                        <svg class="stroke-blue-500" width="32" height="32" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.7048 15.58H35.0248L29.7231 10.275C28.0163 8.56814 25.8902 7.34068 23.5585 6.71603C21.2268 6.09138 18.7718 6.09157 16.4403 6.71656C14.1087 7.34155 11.9827 8.56933 10.2761 10.2765C8.56954 11.9836 7.34242 14.1099 6.71814 16.4417M4.97481 32.74V24.42M4.97481 24.42H13.2948M4.97481 24.42L10.2748 29.725C11.9817 31.4319 14.1078 32.6594 16.4395 33.284C18.7711 33.9087 21.2261 33.9085 23.5577 33.2835C25.8893 32.6585 28.0152 31.4307 29.7218 29.7236C31.4284 28.0164 32.6555 25.8901 33.2798 23.5584M35.0248 7.26002V15.5767"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-gray-900 text-sm">بازگشت تا ۷ روز</span>
+                        <span class="text-gray-600 text-xs mt-1">بدون کارمزد</span>
+                    </div>
+                </div>
+
+                <div class="group flex items-center justify-center gap-4 p-6">
+                    <div class="rounded-full w-16 h-16 bg-gray-50 flex justify-center items-center">
+                        <svg class="stroke-blue-500" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-gray-900 text-sm">گارانتی ۲ ساله</span>
+                        <span class="text-gray-600 text-xs mt-1">بی قید و شرط</span>
+                    </div>
+                </div>
+
+                <div class="group flex items-center justify-center gap-4 p-6">
+                    <div class="rounded-full w-16 h-16 bg-gray-50 flex justify-center items-center">
+                        <svg class="stroke-blue-500" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-gray-900 text-sm">اصالت کالا</span>
+                        <span class="text-gray-600 text-xs mt-1">تضمین اصالت کالا</span>
+                    </div>
+                </div>
+
+                <div class="group flex items-center justify-center gap-4 p-6">
+                    <div class="rounded-full bg-gray-50 w-16 h-16 flex justify-center items-center">
+                        <svg class="stroke-blue-500" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-gray-900 text-sm">تضمین قیمت</span>
+                        <span class="text-gray-600 text-xs mt-1">کمترین قیمت بازار</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- footer -->
 
-    <footer>
-        <div class="container mx-auto bg-white flex py-12 justify-between">
-            <div class="mx-16 flex flex-col max-w-96 gap-6">
-                <div>
-                    <span class="text-[#2388FF] text-2xl font-black">بلو</span>
-                    <span class="text-slate-800 text-2xl font-black">بری</span>
+    <footer class="bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand Section -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center mb-6">
+                        <span class="text-blue-500 text-2xl font-black">بلو</span>
+                        <span class="text-slate-900 text-2xl font-black">بری</span>
+                    </div>
+                    <p class="text-slate-900 text-base leading-loose mb-6">
+                        بلوبری عرضه کننده جدیدترین محصولات الکترونیک نظیر لپ تاپ، گوشی هوشمند و ساعت هوشمند می‌باشد.
+                        دیجی تایز افتخار این را داشته که به ۱۲۲,۲۳۲ نفر تا به اکنون خدمت رسانی داشته باشد.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-blue-500 text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-500 text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-500 text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-500 text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <span class="leading-loose text-blue-950">دیجی‌ تایز عرضه کننده جدیدترین محصولات الکترونیک نظیر
-                    لپ تاپ، گوشی هوشمند و ساعت هوشمند می‌باشد.
-                    دیجی تایز افتخار این را داشته که به ۱۲۲,۲۳۲ نفر تا به اکنون
-                    خدمت رسانی داشته باشد.</span>
+
+                <!-- Products Links -->
+                <div>
+                    <h3
+                        class="text-lg font-semibold mb-6 relative pb-2 after:absolute after:right-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary-500">
+                        محصولات</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> تلفن همراه</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> لپتاپ</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> ساعت هوشمند</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> هدفون</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> لوازم جانبی</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3
+                        class="text-lg font-semibold mb-6 relative pb-2 after:absolute after:right-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary-500">
+                        خدمات مشتریان</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> پیگیری سفارش</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> راهنمای خرید</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> بازگرداندن کالا</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> پرسش های متداول</a></li>
+                        <li><a href="#"
+                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
+                                    class="fas fa-arrow-left ml-2 text-xs"></i> شرایط استفاده</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3
+                        class="text-lg font-semibold mb-6 relative pb-2 after:absolute after:right-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary-500">
+                        تماس با ما</h3>
+                    <div class="mb-6 bg-primary-700 rounded-lg p-4">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-800 p-2 rounded-full ml-3">
+                                <i class="fas fa-phone text-xs text-primary-200"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium">۰۲۱-۱۲۳۴۵۶</p>
+                                <p class="text-xs text-primary-100">پشتیبانی تلفنی</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary-800 p-2 rounded-full ml-3">
+                                <i class="fas fa-envelope text-xs text-primary-200"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium">info@bluberry.com</p>
+                                <p class="text-xs text-primary-100">ایمیل پشتیبانی</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-primary-700 to-primary-600 rounded-lg overflow-hidden">
+                        <div class="p-4 text-center">
+                            <p class="text-sm font-medium mb-2">عضویت در خبرنامه</p>
+                            <div class="flex">
+                                <input type="email" placeholder="ایمیل خود را وارد کنید"
+                                    class="bg-white text-gray-800 text-sm px-3 py-2 rounded-l w-full focus:outline-none">
+                                <button
+                                    class="bg-primary-500 hover:bg-primary-400 text-white px-3 py-2 rounded-r text-sm transition-colors duration-300">عضویت</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div>
-                <ul class="text-blue-950 space-y-6 text-center ">
-                    <li class="font-bold text-md">محصولات</li>
-                    <li>تلفن همراه</li>
-                    <li>لپتاپ</li>
-                    <li>ساعت هوشمند</li>
-                    <li>ساعت هوشمند</li>
-                    <li>ساعت هوشمند</li>
-                </ul>
-            </div>
-
-
-            <div class="flex flex-col items-center">
-                <img class="w-56 h-56" src="../public/img/map.jpg" alt="">
-                <span>۰۲۱-۱۲۳۴۵۶</span>
-                <span>info@bluberry.com</span>
+        <!-- Copyright -->
+        <div class="border-t border-primary-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-primary-200 text-sm">© ۱۴۰۲ کلیه حقوق برای بلو بری محفوظ است.</p>
+                    <div class="flex space-x-6 space-x-reverse mt-4 md:mt-0">
+                        <a href="#"
+                            class="text-primary-200 hover:text-white text-sm transition-colors duration-300">قوانین و
+                            مقررات</a>
+                        <a href="#"
+                            class="text-primary-200 hover:text-white text-sm transition-colors duration-300">حریم
+                            خصوصی</a>
+                        <a href="#"
+                            class="text-primary-200 hover:text-white text-sm transition-colors duration-300">پشتیبانی</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
