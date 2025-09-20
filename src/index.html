@@ -117,11 +117,11 @@
 
 
 
-    <main>
+    <main class="container mx-auto">
         <!-- Enhanced hero gallery with modern image styling and better responsive layout -->
-        <div class="container mx-auto w-full flex flex-col lg:flex-row mt-40 items-center justify-center gap-8 px-8">
+        <div class=" flex flex-col lg:flex-row mt-40 items-center justify-center mx-2">
             <div class="relative group w-full">
-                <img class="rounded-2xl shadow-lg w-full" src="../public/img/slider1.png" alt="">
+                <img class="rounded-2xl shadow-lg w-full object-cover" src="../public/img/slider1.png" alt="">
                 <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent opacity-0">
                 </div>
             </div>
@@ -134,7 +134,7 @@
 
     <div class="mt-8 px-4">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                 <div class="group flex items-center justify-center gap-4 p-6 rounded-2xl  backdrop-blur-sm">
                     <div class="rounded-full w-16 h-16 bg-orange-50 flex justify-center items-center">
                         <svg class="stroke-orange-500" width="32" height="32" stroke-width="1.5" viewBox="0 0 50 50"
@@ -212,7 +212,7 @@
 
     <!-- slider -->
     <section class="container mx-auto">
-        <div class="mx-8 overflow-hidden mt-8 flex items-center rounded-2xl bg-blue-500 h-96">
+        <div class="mx-2 sm:mx-4 lg:mx-8 overflow-hidden mt-8 flex items-center rounded-2xl bg-blue-500 h-96">
             <div class="flex flex-col items-center gap-8 mx-2 lg:mx-12">
                 <span class="text-white mx-8 font-semibold text-3xl text-center">پیشنهاد شگفت انگیز</span>
                 <div class=" p-4">
@@ -227,7 +227,7 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div
-                            class="swiper-slide bg-white w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg border border-gray-100">
+                            class="swiper-slide bg-white min-w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg border border-gray-100">
                             <div class="overflow-hidden rounded-t-2xl">
                                 <img class="w-36 h-40 object-cover" src="../public/img/iphone.jpg" alt="">
                             </div>
@@ -262,7 +262,7 @@
                         </div>
 
                         <div
-                            class="swiper-slide bg-white w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg duration-300 border border-gray-100">
+                            class="swiper-slide bg-white min-w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg duration-300 border border-gray-100">
                             <div class="overflow-hidden rounded-t-2xl">
                                 <img class="w-36 h-40 object-cover" src="../public/img/product7.jpg" alt="">
                             </div>
@@ -297,7 +297,7 @@
                         </div>
 
                         <div
-                            class="swiper-slide bg-white w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg duration-300 border border-gray-100">
+                            class="swiper-slide bg-white min-w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg duration-300 border border-gray-100">
                             <div class="overflow-hidden rounded-t-2xl">
                                 <img class="w-36 h-40 object-cover" src="../public/img/product5.jpg" alt="">
                             </div>
@@ -332,7 +332,7 @@
                         </div>
 
                         <div
-                            class="swiper-slide bg-white w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg border border-gray-100">
+                            class="swiper-slide bg-white min-w-60 py-4 rounded-2xl flex flex-col items-center shadow-lg border border-gray-100">
                             <div class="overflow-hidden rounded-t-2xl">
                                 <img class="w-36 h-40 object-cover" src="../public/img/product6.jpg" alt="">
                             </div>
@@ -374,12 +374,13 @@
     <!-- banner -->
     <section>
         <div class="container mx-auto mt-12">
-            <div class="mx-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
+            <div
+                class="mx-2 sm:mx-4 md:mx-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
                 <div class="flex-1 w-full">
-                    <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/macbook.webp" alt="MacBook">
+                    <img class="w-full h-64 object-contain rounded-2xl" src="../public/img/macbook.webp" alt="MacBook">
                 </div>
                 <div class="flex-1 w-full">
-                    <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/surface.webp" alt="Banner">
+                    <img class="w-full h-64 object-contain rounded-2xl" src="../public/img/surface.webp" alt="Banner">
                 </div>
             </div>
         </div>
@@ -391,7 +392,7 @@
     <!-- categories -->
     <section>
         <div class="container mx-auto">
-            <div class="mt-12 mx-8">
+            <div class="mt-12 mx-2 sm:mx-4 lg:mx-8">
                 <div class="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
                     <h2 class="text-2xl font-bold tracking-tight text-blue-500">دسته‌بندی <span
                             class="text-blue-900">محصولات</span></h2>
@@ -404,8 +405,8 @@
                 <div class="mt-4">
                     <div class="mt-12">
                         <div class="relative box-content h-full py-2">
-                            <div class="flex items-center justify-evenly space-x-8">
-                                <div class="flex flex-col items-center justify-center w-full">
+                            <div class="flex flex-wrap items-center justify-evenly gap-4">
+                                <div class="flex flex-col items-center justify-center">
                                     <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
                                         <span aria-hidden="true" class="absolute inset-0 ">
                                             <img src="../public/img/mobile.png" alt=""
@@ -414,7 +415,7 @@
                                     </a>
                                     <span class="mt-4 text-center font-medium text-gray-900">موبایل</span>
                                 </div>
-                                <div class="flex flex-col items-center justify-center w-full">
+                                <div class="flex flex-col items-center justify-center">
                                     <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
                                         <span aria-hidden="true" class="absolute inset-0">
                                             <img src="../public/img/laptop.png" alt=""
@@ -423,7 +424,7 @@
                                     </a>
                                     <span class="mt-4 text-center font-medium text-gray-900">لپتاپ</span>
                                 </div>
-                                <div class="flex flex-col items-center justify-center w-full">
+                                <div class="flex flex-col items-center justify-center">
                                     <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
                                         <span aria-hidden="true" class="absolute inset-0">
                                             <img src="../public/img/gadgets.png" alt=""
@@ -432,7 +433,7 @@
                                     </a>
                                     <span class="mt-4 text-center font-medium text-gray-900">هدفون</span>
                                 </div>
-                                <div class="flex flex-col items-center justify-center w-full">
+                                <div class="flex flex-col items-center justify-center">
                                     <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
                                         <span aria-hidden="true" class="absolute inset-0">
                                             <img src="../public/img/home.jpg" alt=""
@@ -441,7 +442,7 @@
                                     </a>
                                     <span class="mt-4 text-center font-medium text-gray-900">لوازم منزل</span>
                                 </div>
-                                <div class="flex flex-col items-center justify-center w-full">
+                                <div class="flex flex-col items-center justify-center">
                                     <a href="#" class="relative flex overflow-visible rounded-full p-6 size-48">
                                         <span aria-hidden="true" class="absolute inset-0">
                                             <img src="../public/img/home2.jpg" alt=""
@@ -462,7 +463,8 @@
     <!-- banner -->
     <section>
         <div class="container mx-auto mt-12">
-            <div class="mx-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
+            <div
+                class="mx-2 sm:mx-4 lg:mx-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
                 <div class="flex-1 w-full">
                     <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/banner4.png" alt="MacBook">
                 </div>
@@ -476,9 +478,9 @@
 
 
     <!-- most viewed -->
-    <section class="mt-16">
-        <div class="container mt-12 mx-auto">
-            <div class="sm:flex sm:items-center sm:justify-between mx-8">
+    <section>
+        <div class="container mt-16 mx-auto">
+            <div class="px-4 mx-2 sm:mx-4 lg:mx-8 sm:flex sm:items-center sm:justify-between">
                 <h2 class="text-2xl font-black tracking-tight text-blue-500">محصولات <span
                         class="text-blue-900">پرفروش</span></h2>
                 <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
@@ -487,7 +489,7 @@
                 </a>
             </div>
             <!-- slider -->
-            <div class="overflow-hidden mt-12 flex items-center mx-8 rounded-4xl bg-amber-500 h-96">
+            <div class="overflow-hidden mt-12 flex items-center mx-2 sm:mx-4 lg:mx-8 rounded-4xl bg-amber-500 h-96">
                 <div class="w-full flex items-center justify-center gap-x-8 px-4">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -673,37 +675,11 @@
 
 
 
-    <!-- companies -->
-    <!-- <section class="container mx-auto">
-        <div class="border-2 mx-8 rounded-2xl divide-x-2 flex flex-wrap justify-between items-center gap-4 my-16">
-            <div class="w-56 h-56 rounded-lg bg-white flex items-center justify-center">
-                <img src="../public/img/huawei.png" alt="">
-            </div>
-            <div class="w-56 h-56 rounded-lg bg-white flex items-center justify-center">
-                <img src="../public/img/apple.png" alt="">
-            </div>
-
-            <div class="w-56 h-56 rounded-lg bg-white flex items-center justify-center">
-                <img src="../public/img/samsung.png" alt="">
-            </div>
-            <div class="w-56 h-56 rounded-lg bg-white flex items-center justify-center">
-                <img src="../public/img/xiaomi.png" alt="">
-            </div>
-
-            <div class="w-56 h-56 rounded-lg bg-white flex items-center justify-center">
-                <img src="../public/img/nokia.png" alt="">
-            </div>
-        </div>
-    </section> -->
-
-
-
-
     <!-- blog -->
     <section>
         <div class="container mx-auto">
-            <div class="sm:flex mt-24 sm:items-center sm:justify-between mx-8">
-                <h2 class="text-2xl font-black tracking-tight text-blue-500">جدیدترین <span
+            <div class="px-4 sm:flex mt-16 sm:items-center sm:justify-between mx-2 sm:mx-4 lg:mx-8">
+                <h2 class="text-2xl font-bold tracking-tight text-blue-500">جدیدترین <span
                         class="text-blue-900">مطالب</span></h2>
                 <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
                     مشاهده همه
@@ -712,10 +688,10 @@
             </div>
             <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 mx-4 md:mx-8 my-12">
                 <div class="flex bg-white rounded-xl shadow">
-                    <img class="object-contain" src="../public/img/blog1.jpg" alt="">
+                    <img class="object-contain w-1/2" src="../public/img/blog1.jpg" alt="">
                     <div class="flex flex-col m-4">
                         <h5 class="font-bold text-lg text-blue-950">راهنمای خرید موبایل</h5>
-                        <span>با بیش از سی سال سابقه خدمت به
+                        <span class="mt-4 mb-2">با بیش از سی سال سابقه خدمت به
                             مشتریان در زمینه فروش ابزارآلات صنعتی</span>
                         <hr class="mt-auto mb-2">
                         <div class="flex justify-between text-gray-500">
@@ -729,10 +705,10 @@
                     </div>
                 </div>
                 <div class="flex bg-white rounded-xl shadow">
-                    <img src="../public/img/blog2.jpg" alt="">
+                    <img class="object-contain w-1/2" src="../public/img/blog2.jpg" alt="">
                     <div class="flex flex-col m-4">
                         <h5 class="font-bold text-lg text-blue-950">راهنمای خرید موبایل</h5>
-                        <span>با بیش از سی سال سابقه خدمت به
+                        <span class="mt-4 mb-2">با بیش از سی سال سابقه خدمت به
                             مشتریان در زمینه فروش ابزارآلات صنعتی</span>
                         <hr class="mt-auto mb-2">
                         <div class="flex justify-between text-gray-500">
@@ -755,8 +731,8 @@
 
     <!-- footer -->
 
-    <footer class="bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer class="container mx-auto">
+        <div class="mx-2 sm:mx-4 lg:mx-8 bg-blue-50 rounded-t-2xl px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 <!-- Brand Section -->
                 <div class="col-span-2 lg:col-span-2">
@@ -802,60 +778,57 @@
 
                 <!-- Products Links -->
                 <div>
-                    <h3
-                        class="text-lg font-semibold mb-6 relative pb-2 after:absolute after:right-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary-500">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 text-slate-900">
                         محصولات</h3>
-                    <ul class="space-y-3">
+                    <ul class="space-y-3 text-slate-800">
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> تلفن همراه</a></li>
+                                class="hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                تلفن همراه</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> لپتاپ</a></li>
+                                class="hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                لپتاپ</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> ساعت هوشمند</a></li>
+                                class="hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">ساعت
+                                هوشمند</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> هدفون</a></li>
+                                class="hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                هدفون</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> لوازم جانبی</a></li>
+                                class="hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                لوازم جانبی</a></li>
                     </ul>
                 </div>
 
                 <!-- Customer Service -->
-                <div>
-                    <h3
-                        class="text-lg font-semibold mb-6 relative pb-2 after:absolute after:right-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary-500">
+                <div class="text-slate-800">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2 text-slate-900">
                         خدمات مشتریان</h3>
                     <ul class="space-y-3">
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> پیگیری سفارش</a></li>
+                                class=" hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                پیگیری سفارش</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> راهنمای خرید</a></li>
+                                class=" hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                راهنمای خرید</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> بازگرداندن کالا</a></li>
+                                class=" hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                بازگرداندن کالا</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> پرسش های متداول</a></li>
+                                class=" hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                پرسش های متداول</a></li>
                         <li><a href="#"
-                                class="text-primary-100 hover:text-white transition-colors duration-300 text-sm flex items-center"><i
-                                    class="fas fa-arrow-left ml-2 text-xs"></i> شرایط استفاده</a></li>
+                                class=" hover:text-slate-600 transition-colors duration-300 text-sm flex items-center">
+                                شرایط استفاده</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h3
-                        class="text-lg font-semibold mb-6 relative pb-2 after:absolute after:right-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary-500">
+                    <h3 class="text-lg font-semibold mb-6 relative pb-2">
                         تماس با ما</h3>
-                    <div class="mb-6 bg-primary-700 rounded-lg">
-                        <div class="flex items-start mb-4">
-                            <div class="bg-primary-800 p-2 rounded-full ml-3">
+                    <div class="mb-6 text-slate-800 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full ml-3">
                                 <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -865,11 +838,10 @@
                             </div>
                             <div>
                                 <p class="text-sm font-medium">۰۲۱-۱۲۳۴۵۶</p>
-                                <p class="text-xs text-primary-100">پشتیبانی تلفنی</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="bg-primary-800 p-2 rounded-full ml-3">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary-800 rounded-full ml-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -879,7 +851,22 @@
                             </div>
                             <div>
                                 <p class="text-sm font-medium">info@bluberry.com</p>
-                                <p class="text-xs text-primary-100">ایمیل پشتیبانی</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary-800 rounded-full ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+
+
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium">تهران، میدان هفتم تیر، خیابان لطفی</p>
                             </div>
                         </div>
                     </div>
@@ -889,15 +876,15 @@
         </div>
 
         <!-- Copyright -->
-        <div class="border-t border-primary-700">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="flex space-x-6 space-x-reverse mt-4 md:mt-0">
-                        <a href="#" class="text-primary-200 text-sm transition-colors duration-300">قوانین و
+        <div class="border-t border-blue-200 mx-2 sm:mx-4 lg:mx-8 bg-blue-50">
+            <div class=" px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-y-4">
+                    <div class="flex space-x-6 space-x-reverse mt-4 md:mt-0 text-slate-800">
+                        <a href="#" class="hover:text-slate-600 text-sm transition-colors duration-300">قوانین و
                             مقررات</a>
-                        <a href="#" class="text-primary-200 text-sm transition-colors duration-300">حریم
+                        <a href="#" class="hover:text-slate-600 text-sm transition-colors duration-300">حریم
                             خصوصی</a>
-                        <a href="#" class="text-primary-200 text-sm transition-colors duration-300">پشتیبانی</a>
+                        <a href="#" class="hover:text-slate-600 text-sm transition-colors duration-300">پشتیبانی</a>
                     </div>
                     <p class="text-primary-200 text-sm ">© ۱۴۰۲ کلیه حقوق برای بلو بری محفوظ است.</p>
                     <div class="flex gap-4">
