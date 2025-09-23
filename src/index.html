@@ -13,11 +13,11 @@
 <body class="font-vazir bg-white">
 
     <header
-        class="container z-50 fixed top-0 right-0 left-0 hidden md:flex items-center px-6 lg:px-8 py-4 mx-auto bg-white/95 backdrop-blur-sm border-b border-gray-100">
-        <div class="flex flex-col w-full gap-6">
+        class="container z-50 fixed top-0 right-0 left-0 flex items-center py-4 mx-auto bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="flex flex-col w-full gap-6 mx-2 md:mx-4 lg:mx-8">
             <!-- Reduced header height and improved spacing -->
             <div class="w-full flex items-center justify-between">
-                <div class="flex items-center gap-16">
+                <div class="flex items-center gap-8 w-full ml-4">
                     <!-- Updated logo with modern styling -->
                     <div class="flex items-center">
                         <span class="text-[#2388FF] text-3xl font-bold tracking-tight">بلو</span>
@@ -26,7 +26,7 @@
 
                     <!-- Modern search bar with clean design -->
                     <div
-                        class="w-96 h-11 flex items-center relative rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors focus-within:border-[#2388FF] focus-within:ring-2 focus-within:ring-[#2388FF]/10">
+                        class=" w-full lg:w-4/6 h-11 flex items-center relative rounded-xl bg-gray-50 border border-gray-200 hover:border-gray-300 transition-colors focus-within:border-[#2388FF] focus-within:ring-2 focus-within:ring-[#2388FF]/10">
                         <svg class="size-5 absolute right-4 text-gray-400" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -37,7 +37,16 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-6">
+                <button class=" p-2.5 font-thin md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+
+
+                <div class="hidden md:flex items-center gap-6">
                     <button class=" py-2.5 font-thin">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -66,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="border-t border-gray-100 pt-4">
+            <div class="hidden md:block border-t border-gray-100 pt-4">
                 <ul class="flex gap-x-8 text-sm items-center">
                     <li>
                         <a class="flex items-center bg-blue-500 text-white gap-3 px-3 py-2 rounded-md font-medium"
@@ -119,9 +128,9 @@
 
     <main class="container mx-auto">
         <!-- Enhanced hero gallery with modern image styling and better responsive layout -->
-        <div class=" flex flex-col lg:flex-row mt-40 items-center justify-center mx-2">
+        <div class=" flex flex-col lg:flex-row mt-24 md:mt-40 items-center justify-center mx-2 sm:mx-4 md:mx-8">
             <div class="relative group w-full">
-                <img class="rounded-2xl shadow-lg w-full object-cover" src="../public/img/slider1.png" alt="">
+                <img class="rounded-2xl shadow-lg w-full object-contain" src="../public/img/slider1.png" alt="">
                 <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent opacity-0">
                 </div>
             </div>
@@ -132,9 +141,10 @@
 
     </main>
 
+    <!-- features -->
     <div class="mt-8 px-4">
         <div class="container mx-auto">
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 sm:place-items-center md:gap-4">
                 <div class="group flex items-center justify-center gap-4 p-6 rounded-2xl  backdrop-blur-sm">
                     <div class="rounded-full w-16 h-16 bg-orange-50 flex justify-center items-center">
                         <svg class="stroke-orange-500" width="32" height="32" stroke-width="1.5" viewBox="0 0 50 50"
@@ -463,13 +473,12 @@
     <!-- banner -->
     <section>
         <div class="container mx-auto mt-12">
-            <div
-                class="mx-2 sm:mx-4 lg:mx-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
+            <div class="mx-2 sm:mx-4 lg:mx-8 flex flex-col lg:flex-row items-center justify-center gap-4">
                 <div class="flex-1 w-full">
-                    <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/banner4.png" alt="MacBook">
+                    <img class="w-full h-full object-cover rounded-2xl" src="../public/img/banner4.png" alt="MacBook">
                 </div>
                 <div class="flex-1 w-full">
-                    <img class="w-full h-64 object-cover rounded-2xl" src="../public/img/banner3.png" alt="Banner">
+                    <img class="w-full h-full object-cover rounded-2xl" src="../public/img/banner3.png" alt="Banner">
                 </div>
             </div>
         </div>
@@ -732,7 +741,7 @@
     <!-- footer -->
 
     <footer class="container mx-auto">
-        <div class="mx-2 sm:mx-4 lg:mx-8 bg-blue-50 rounded-t-2xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mx-2 sm:mx-4 lg:mx-8 bg-[#FBFBFB] rounded-t-2xl px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 <!-- Brand Section -->
                 <div class="col-span-2 lg:col-span-2">
@@ -876,7 +885,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="border-t border-blue-200 mx-2 sm:mx-4 lg:mx-8 bg-blue-50">
+        <div class="border-t border-gray-50 bg-[#FBFBFB] mx-2 sm:mx-4 lg:mx-8 ">
             <div class=" px-4 sm:px-6 lg:px-8 py-6">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-y-4">
                     <div class="flex space-x-6 space-x-reverse mt-4 md:mt-0 text-slate-800">
