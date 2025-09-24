@@ -65,13 +65,13 @@
 
                     <div class="w-px h-8 bg-gray-200"></div>
 
-                    <button class=" py-2.5 rounded-lg">
+                    <a href="#" class=" p-2 rounded-lg bg-blue-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
+                            stroke="currentColor" class="size-6 stroke-white">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -383,14 +383,22 @@
 
     <!-- banner -->
     <section>
-        <div class="container mx-auto mt-12">
-            <div
-                class="mx-2 sm:mx-4 md:mx-8 flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-center gap-4">
+        <div class="container mx-auto mt-4">
+            <div class="mx-2 sm:mx-4 md:mx-8 flex flex-col lg:flex-row items-center justify-center gap-4">
                 <div class="flex-1 w-full">
-                    <img class="w-full h-64 object-contain rounded-2xl" src="../public/img/macbook.webp" alt="MacBook">
+                    <a href="#">
+                        <img class="w-full h-60 object-cover rounded-2xl" src="../public/img/banner21.png" alt="banner">
+                    </a>
                 </div>
                 <div class="flex-1 w-full">
-                    <img class="w-full h-64 object-contain rounded-2xl" src="../public/img/surface.webp" alt="Banner">
+                    <a href="#">
+                        <img class="w-full h-60 object-cover rounded-2xl" src="../public/img/banner22.png" alt="Banner">
+                    </a>
+                </div>
+                <div class="flex-1 w-full">
+                    <a href="#">
+                        <img class="w-full h-60 object-cover rounded-2xl" src="../public/img/banner23.png" alt="Banner">
+                    </a>
                 </div>
             </div>
         </div>
@@ -406,9 +414,8 @@
                 <div class="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
                     <h2 class="text-2xl font-bold tracking-tight text-blue-500">دسته‌بندی <span
                             class="text-blue-900">محصولات</span></h2>
-                    <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
+                    <a href="#" class="hidden text-lg font-medium text-blue-900 hover:text-blue-700 sm:block">
                         مشاهده همه
-                        <span aria-hidden="true"> &larr;</span>
                     </a>
                 </div>
 
@@ -475,7 +482,7 @@
         <div class="container mx-auto mt-12">
             <div class="mx-2 sm:mx-4 lg:mx-8 flex flex-col lg:flex-row items-center justify-center gap-4">
                 <div class="flex-1 w-full">
-                    <img class="w-full h-full object-cover rounded-2xl" src="../public/img/banner4.png" alt="MacBook">
+                    <img class="w-full h-full object-cover rounded-2xl" src="../public/img/banner4.png" alt="banner">
                 </div>
                 <div class="flex-1 w-full">
                     <img class="w-full h-full object-cover rounded-2xl" src="../public/img/banner3.png" alt="Banner">
@@ -489,16 +496,15 @@
     <!-- most viewed -->
     <section>
         <div class="container mt-16 mx-auto">
-            <div class="px-4 mx-2 sm:mx-4 lg:mx-8 sm:flex sm:items-center sm:justify-between">
+            <div class="px-4 sm:px-6 lg:px-8 xl:px-0 mx-2 sm:mx-4 lg:mx-8 sm:flex sm:items-center sm:justify-between">
                 <h2 class="text-2xl font-black tracking-tight text-blue-500">محصولات <span
                         class="text-blue-900">پرفروش</span></h2>
-                <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
+                <a href="#" class="hidden text-lg font-medium text-blue-900 hover:text-blue-700 sm:block">
                     مشاهده همه
-                    <span aria-hidden="true"> &larr;</span>
                 </a>
             </div>
             <!-- slider -->
-            <div class="overflow-hidden mt-12 flex items-center mx-2 sm:mx-4 lg:mx-8 rounded-4xl bg-amber-500 h-96">
+            <div class="overflow-hidden mt-12 flex items-center mx-2 sm:mx-4 lg:mx-8 rounded-2xl bg-amber-500 h-96">
                 <div class="w-full flex items-center justify-center gap-x-8 px-4">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -687,12 +693,12 @@
     <!-- blog -->
     <section>
         <div class="container mx-auto">
-            <div class="px-4 sm:flex mt-16 sm:items-center sm:justify-between mx-2 sm:mx-4 lg:mx-8">
+            <div
+                class="px-4 sm:px-6 lg:px-8 xl:px-0 sm:flex mt-16 sm:items-center sm:justify-between mx-2 sm:mx-4 lg:mx-8">
                 <h2 class="text-2xl font-bold tracking-tight text-blue-500">جدیدترین <span
                         class="text-blue-900">مطالب</span></h2>
-                <a href="#" class="hidden text-sm font-semibold text-blue-500 hover:text-blue-500 sm:block">
+                <a href="#" class="hidden text-lg font-medium text-blue-900 hover:text-blue-700 sm:block">
                     مشاهده همه
-                    <span aria-hidden="true"> &larr;</span>
                 </a>
             </div>
             <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 mx-4 md:mx-8 my-12">
