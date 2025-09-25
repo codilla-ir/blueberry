@@ -17,11 +17,12 @@
         <div class="flex flex-col w-full gap-6 mx-2 md:mx-4 lg:mx-8">
             <!-- Reduced header height and improved spacing -->
             <div class="w-full flex items-center justify-between">
-                <div class="flex items-center gap-8 w-full ml-4">
+                <div class="flex items-center gap-8 lg:gap-0 w-full ml-4">
                     <!-- Updated logo with modern styling -->
-                    <div class="flex items-center">
-                        <span class="text-[#2388FF] text-3xl font-bold tracking-tight">بلو</span>
-                        <span class="text-gray-900 text-3xl font-bold tracking-tight">بری</span>
+                    <div class="flex items-center ml-8">
+                        <img class="ml-2" src="../public/img/logo.svg" alt="logo">
+                        <span class="text-[#2388FF] text-3xl font-black tracking-tight">بلو</span>
+                        <span class="text-gray-900 text-3xl font-black tracking-tight">بری</span>
                     </div>
 
                     <!-- Modern search bar with clean design -->
@@ -65,7 +66,7 @@
 
                     <div class="w-px h-8 bg-gray-200"></div>
 
-                    <a href="#" class=" p-2 rounded-lg bg-blue-500">
+                    <a href="./shopping-cart.html" class=" p-2 rounded-lg bg-blue-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6 stroke-white">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -130,7 +131,8 @@
         <!-- Enhanced hero gallery with modern image styling and better responsive layout -->
         <div class=" flex flex-col lg:flex-row mt-24 md:mt-40 items-center justify-center mx-2 sm:mx-4 md:mx-8">
             <div class="relative group w-full">
-                <img class="rounded-2xl shadow-lg w-full object-contain" src="../public/img/slider1.png" alt="">
+                <img class="rounded-2xl shadow-lg w-full h-64 md:h-full object-fill md:object-cover"
+                    src="../public/img/slider1.png" alt="">
                 <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent opacity-0">
                 </div>
             </div>
@@ -752,8 +754,9 @@
                 <!-- Brand Section -->
                 <div class="col-span-2 lg:col-span-2">
                     <div class="flex items-center mb-6">
-                        <span class="text-blue-500 text-2xl font-black">بلو</span>
-                        <span class="text-slate-900 text-2xl font-black">بری</span>
+                        <img class="ml-2" src="../public/img/logo.svg" alt="logo">
+                        <span class="text-blue-500 text-3xl font-black">بلو</span>
+                        <span class="text-slate-900 text-3xl font-black">بری</span>
                     </div>
                     <p class="text-slate-900 text-base leading-loose mb-6">
                         بلوبری عرضه کننده جدیدترین محصولات الکترونیک نظیر لپ تاپ، گوشی هوشمند و ساعت هوشمند می‌باشد.
